@@ -1,0 +1,10 @@
+workspace:
+  base: /workspace
+  path: src/github.com/bitlogic/bitlogic.io
+pipeline:
+  publish-bitlogic:
+    image: plugins/docker
+    repo: bitlogicos/bitlogic-io
+    tag:
+    - latest
+    - "1.0.${DRONE_BUILD_NUMBER}"
