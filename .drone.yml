@@ -16,4 +16,4 @@ pipeline:
       script:
         - docker pull bitlogicos/bitlogic-io
         - docker rm -f beta || true
-        - docker run -p 8080:80 -d bitlogicos/bitlogic-io
+        - docker run --name beta -p 8080:80 -d bitlogicos/bitlogic-io
