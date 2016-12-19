@@ -2,9 +2,18 @@ workspace:
   base: /workspace
   path: src/github.com/bitlogic/bitlogic.io
 pipeline:
-  publish-bitlogic:
+  dockerize-site:
     image: plugins/docker
     repo: bitlogicos/bitlogic-io
     tag:
     - latest
     - "1.0.${DRONE_BUILD_NUMBER}"
+  deploy-to-8080:
+      image: plugins/ssh
+      host: i1.bitlogic.io
+      user: ec2-user
+      port: 22
+      script:
+        - docker pull bitlogic/bitlogic-io
+        - docker rm -f beta || true
+        - docker run -p 8080:80 -d bitlogic/bitlogic-io
