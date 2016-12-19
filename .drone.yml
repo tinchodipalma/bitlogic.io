@@ -17,3 +17,9 @@ pipeline:
         - docker pull bitlogicos/bitlogic-io
         - docker rm -f beta || true
         - docker run --name beta -p 8080:80 -d bitlogicos/bitlogic-io
+  run-smoke-test:
+      image: bitlogicos/bitlogic-io-test
+      pull: true
+      
+
+        
