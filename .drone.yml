@@ -14,6 +14,6 @@ pipeline:
       user: ec2-user
       port: 22
       script:
-        - docker pull bitlogic/bitlogic-io
+        - docker pull bitlogicos/bitlogic-io
         - docker rm -f beta || true
-        - docker run -p 8080:80 -d bitlogic/bitlogic-io
+        - docker run -p 8080:80 -d bitlogicos/bitlogic-io
