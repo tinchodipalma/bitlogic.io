@@ -2,6 +2,12 @@ workspace:
   base: /workspace
   path: src/github.com/bitlogic/bitlogic.io
 pipeline:
+  optimize-content:
+    image: alexac/alpine-grunt-bower
+    script:
+      - npm install
+      - grunt 
+
   dockerize-site:
     image: plugins/docker
     repo: bitlogicos/bitlogic-io
