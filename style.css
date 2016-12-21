@@ -2,17 +2,14 @@
     IMPORT FONTS
 ******************************************/
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700italic,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:700&subset=latin,latin-ext);
 
 /******************************************
     IMPORT FILES
 ******************************************/
 
 @import url(css/font-awesome.min.css);
-@import url(css/bbpress.css);
 @import url(revolution/css/navigation.css);
-@import url(css/build/mediaelementplayer.css);
 @import url(css/bootstrap-select.min.css);
 
 /******************************************
@@ -34,8 +31,8 @@ body.comingsoon {
     background-size: cover;
 }
 
-body.boxed { 
-    background: url(images/bg.jpg) repeat center center scroll; 
+body.boxed {
+    background: url(images/bg.jpg) repeat center center scroll;
 }
 body.boxed #wrapper {
     margin: 40px auto;
@@ -89,12 +86,6 @@ a:focus {
     -o-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-}
-
-.twitter_feed li a,
-small {
-    font-style: italic;
-    color: #999;
 }
 
 .col-xs-15,
@@ -6815,19 +6806,6 @@ body,
     font-family: 'Lato', sans-serif !important;
 }
 
-.twitter_feed li a,
-small,
-.authorlink,
-.blog-meta li,
-.clients-name,
-.blog-media blockquote .lead,
-.sign p,
-#testimonials-rotate .lead {
-    font-family: 'Droid Serif', sans-serif !important;
-}
-
-
-
 .demo-wrapper .magnifier .team-desc {
     left: 0;
     padding: 20px;
@@ -6835,11 +6813,11 @@ small,
     right: 0;
     top: 37% !important;
 }
-.demo-wrapper .team-boxes h4 a, 
+.demo-wrapper .team-boxes h4 a,
 .demo-wrapper .team-boxes h4 {
     padding-bottom: 30px !important
 }
-.demo-wrapper .team-boxes h4 a, 
+.demo-wrapper .team-boxes h4 a,
 .demo-wrapper .team-boxes h4 {
     background-color: #ffffff;
 }
@@ -6962,9 +6940,6 @@ hr.style15::after,
 .image-box-1.colormagnifier .magnifier,
 .popover-title,
 div.bbp-template-notice.info,
-#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count,
-#bbpress-forums li.bbp-body ul.forum li.bbp-forum-topic-count,
-#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count,
 .hovericons,
 .serviceBox3 .service-icon a > span,
 .ribbon-pt1,
@@ -7006,14 +6981,6 @@ div.bbp-template-notice.info,
 }
 .revtp-searchform input[type="submit"],
 .revtp-form input[type="submit"],
-.mejs-controls .mejs-time-rail .mejs-time-current,
-.mejs-container .mejs-control {
-    background: #1CAADE !important;
-}
-
-.mejs-controls .mejs-time-rail .mejs-time-loaded {
-    background: #ffffff;
-}
 
 .gallery-item:hover .gallery-desc,
 .normaltable.tabs-below .nav-tabs > li.active a,
