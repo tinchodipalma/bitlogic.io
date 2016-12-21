@@ -873,15 +873,32 @@
     <script>
       var map;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -31.3702096, lng: -64.2373199},
-          zoom: 8
+        var locations = [
+            [
+              '<div class="infobox"><h3 class="title"><a href="#">Córdoba, Argentina</a></h3><div>AV. Fernando Fader 4412</div><div>+54 9 351 157 404 863</div></div>', -31.3702096, -64.2373199, 2]
+            ];
+        var map = new google.maps.Map(document.getElementById('map2'), {
+          center: {lat: locations[0][1], lng: locations[0][2]},
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
         });
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map ,
+          });
+          google.maps.event.addListener(marker, 'click',
+            (function(marker, i) {
+              return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+              }
+            })(marker, i));
+        }
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD31ut2V2Bh5c9paWVhtv_RwHjbTkOMOdY&callback=initMap" async defer></script>
-    <script src="js/contact.js"></script>
-    <script src="js/map2.js"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyD31ut2V2Bh5c9paWVhtv_RwHjbTkOMOdY&callback=initMap"></script>
 </body>
 </html>
