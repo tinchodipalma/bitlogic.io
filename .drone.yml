@@ -7,7 +7,6 @@ pipeline:
     script:
       - npm install
       - grunt 
-
   dockerize-site:
     image: plugins/docker
     repo: bitlogicos/bitlogic-io
