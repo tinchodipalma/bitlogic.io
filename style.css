@@ -2,24 +2,30 @@
     IMPORT FONTS
 ******************************************/
 
+
 /*@import url(https://fonts.googleapis.com/css?family=Lato:700&subset=latin,latin-ext);*/
+
 
 /******************************************
     IMPORT FILES
 ******************************************/
 
+
 /*@import url(css/font-awesome.min.css);
 @import url(revolution/css/navigation.css);
 @import url(css/bootstrap-select.min.css);*/
 
+
 /* latin */
+
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
 
 /******************************************
     STARTUP
@@ -43,17 +49,21 @@ body.comingsoon {
 body.boxed {
     background: url(images/bg.jpg) repeat center center scroll;
 }
+
 body.boxed #wrapper {
     margin: 40px auto;
     max-width: 1280px
 }
+
 body.onepage-version .navbar-right li a {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 body.onepage-version .navbar-right {
     display: block !important
 }
+
 li,
 p {
     color: #676767;
@@ -552,7 +562,7 @@ hr.circle1::before {
 }
 
 .header-dark .navbar-right li i,
-.header-dark .navbar-nav > li > a {
+.header-dark .navbar-nav>li>a {
     color: #ffffff;
     color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -667,6 +677,7 @@ hr.circle1::before {
     border: 0;
     box-shadow: none !important;
     background-color: transparent;
+    background-image: none;
 }
 
 .navbar-brand {
@@ -682,7 +693,7 @@ hr.circle1::before {
     font-weight: 300;
 }
 
-.navbar-nav > li > a i {
+.navbar-nav>li>a i {
     margin-right: 3px;
 }
 
@@ -692,7 +703,7 @@ hr.circle1::before {
     float: none;
 }
 
-.navbar-nav > li > a {
+.navbar-nav>li>a {
     font-size: 13px;
     color: #1F1F1F !important;
     padding: 14px 15px 14px;
@@ -703,7 +714,7 @@ hr.circle1::before {
 }
 
 .dropdown-menu li,
-.navbar-nav > li {
+.navbar-nav>li {
     -webkit-transition: all 0.7s ease 0s;
     -moz-transition: all 0.7s ease 0s;
     -ms-transition: all 0.7s ease 0s;
@@ -713,13 +724,13 @@ hr.circle1::before {
 
 .dropdown-menu li:hover a,
 .dropdown-menu li:focus a,
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
     background-color: transparent !important;
 }
 
-.navbar-nav > li.megamenu .dropdown-menu a {
+.navbar-nav>li.megamenu .dropdown-menu a {
     clear: both;
     display: block;
     font-size: 13px !important;
@@ -729,17 +740,17 @@ hr.circle1::before {
     white-space: nowrap;
 }
 
-.navbar-right > li > .dropdown-menu li {
+.navbar-right>li>.dropdown-menu li {
     background-color: transparent !important;
 }
 
-.dropdown-menu > li:hover,
-.dropdown-menu > li:focus,
-.dropdown-menu > li {
+.dropdown-menu>li:hover,
+.dropdown-menu>li:focus,
+.dropdown-menu>li {
     border-color: rgba(51, 51, 51, 0.1) !important;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu>li>a {
     clear: both;
     color: #666666;
     display: block;
@@ -751,45 +762,45 @@ hr.circle1::before {
     text-transform: capitalize;
 }
 
-.dropdown-menu > li {
+.dropdown-menu>li {
     padding: 12px 20px;
     border-bottom: 1px solid #efefef;
 }
 
-.dropdown-menu > li:last-child {
+.dropdown-menu>li:last-child {
     border-bottom: 0;
 }
 
-.dropdown-menu > li:hover > a {
+.dropdown-menu>li:hover>a {
     text-decoration: none !important;
 }
 
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
     text-decoration: none;
     outline: 0;
 }
 
-.dropdown-menu > .disabled > a,
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:hover,
+.dropdown-menu>.disabled>a:focus {
     color: #cccccc;
 }
 
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
+.dropdown-menu>.disabled>a:hover,
+.dropdown-menu>.disabled>a:focus {
     text-decoration: none;
     background-color: transparent;
     background-image: none;
     cursor: not-allowed;
 }
 
-.open > .dropdown-menu {
+.open>.dropdown-menu {
     display: block;
 }
 
-.open > a {
+.open>a {
     outline: 0;
 }
 
@@ -862,7 +873,7 @@ hr.circle1::before {
     border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
 }
 
-.navbar-right > li > .dropdown-menu {
+.navbar-right>li>.dropdown-menu {
     background-color: #1f1f1f;
 }
 
@@ -895,14 +906,14 @@ hr.circle1::before {
     padding: 12px 20px;
 }
 
-.navbar-nav > li > .dropdown-menu .dropdown-menu,
-.navbar-nav > li > .dropdown-menu,
-.navbar-nav > li.megamenu > .dropdown-menu {
+.navbar-nav>li>.dropdown-menu .dropdown-menu,
+.navbar-nav>li>.dropdown-menu,
+.navbar-nav>li.megamenu>.dropdown-menu {
     border: 0 !important;
     border-bottom: 3px solid #ddd !important;
 }
 
-.dropdown-mega > li a:before {
+.dropdown-mega>li a:before {
     content: "\f105";
     font-family: "FontAwesome";
     font-size: 13px;
@@ -914,11 +925,11 @@ hr.circle1::before {
     top: 0;
 }
 
-.dropdown-mega > li {
+.dropdown-mega>li {
     list-style: none;
 }
 
-.pull-right > .dropdown-menu {
+.pull-right>.dropdown-menu {
     right: 0;
     left: auto;
 }
@@ -941,7 +952,8 @@ hr.circle1::before {
     width: auto;
 }
 
-.navbar-nav .has-submenu .dropdown-menu li a, .navbar-nav .hasmenu ul li a {
+.navbar-nav .has-submenu .dropdown-menu li a,
+.navbar-nav .hasmenu ul li a {
     color: #787878 !important;
     font-weight: normal !important;
     position: relative;
@@ -955,10 +967,10 @@ hr.circle1::before {
     display: inline-block;
 }
 
-.navbar-nav > li:hover,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav>li:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
     border-bottom: 0 solid #ddd !important;
 }
@@ -1148,12 +1160,12 @@ hr.circle1::before {
     HEADER CART
 ******************************************/
 
-.wps-class-table > thead > tr > th,
-.wps-class-table > tbody > tr > th,
-.wps-class-table > tfoot > tr > th,
-.wps-class-table > thead > tr > td,
-.wps-class-table > tbody > tr > td,
-.wps-class-table > tfoot > tr > td {
+.wps-class-table>thead>tr>th,
+.wps-class-table>tbody>tr>th,
+.wps-class-table>tfoot>tr>th,
+.wps-class-table>thead>tr>td,
+.wps-class-table>tbody>tr>td,
+.wps-class-table>tfoot>tr>td {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -1295,6 +1307,7 @@ hr.circle1::before {
     color: #ffffff !important;
 }
 
+
 /******************************************
     SECTIONS
 ******************************************/
@@ -1320,7 +1333,7 @@ hr.circle1::before {
     transform: translateX(-50%);
 }
 
-.visual > .container {
+.visual>.container {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -1560,8 +1573,8 @@ hr.circle1::before {
     }
 }
 
-.dropdown-menu > li > a:focus,
-.dropdown-menu > li > a:hover {
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     background-color: transparent;
 }
 
@@ -2225,13 +2238,13 @@ div.content {
 .pricing-box-09 .btn.active,
 .pricing-box-09 .btn:active:hover,
 .pricing-box-09 .btn.active:hover,
-.open > .dropdown-toggle.pricing-box-09 .btn:hover,
+.open>.dropdown-toggle.pricing-box-09 .btn:hover,
 .pricing-box-09:active:focus,
 .pricing-box-09.active:focus,
-.open > .dropdown-toggle.pricing-box-09 .btn:focus,
+.open>.dropdown-toggle.pricing-box-09 .btn:focus,
 .pricing-box-09:active.focus,
 .pricing-box-09.active.focus,
-.open > .dropdown-toggle.pricing-box-09 .btn.focus {
+.open>.dropdown-toggle.pricing-box-09 .btn.focus {
     border-color: #3870a0;
     background-color: #3870a0;
 }
@@ -2477,13 +2490,13 @@ div.content {
 .pricing-box-05 .btn.active,
 .pricing-box-05 .btn:active:hover,
 .pricing-box-05 .btn.active:hover,
-.open > .dropdown-toggle.pricing-box-05 .btn:hover,
+.open>.dropdown-toggle.pricing-box-05 .btn:hover,
 .pricing-box-05:active:focus,
 .pricing-box-05.active:focus,
-.open > .dropdown-toggle.pricing-box-05 .btn:focus,
+.open>.dropdown-toggle.pricing-box-05 .btn:focus,
 .pricing-box-05:active.focus,
 .pricing-box-05.active.focus,
-.open > .dropdown-toggle.pricing-box-05 .btn.focus {
+.open>.dropdown-toggle.pricing-box-05 .btn.focus {
     border-color: #009688;
     background-color: #009688;
 }
@@ -2571,64 +2584,64 @@ div.content {
 
 /* custom inclusion of right, left and below tabs */
 
-.tabs-left > .nav-tabs > li,
-.tabs-right > .nav-tabs > li {
+.tabs-left>.nav-tabs>li,
+.tabs-right>.nav-tabs>li {
     float: none;
 }
 
-.tabs-left > .nav-tabs > li > a,
-.tabs-right > .nav-tabs > li > a {
+.tabs-left>.nav-tabs>li>a,
+.tabs-right>.nav-tabs>li>a {
     min-width: 74px;
     margin-right: 0;
     margin-bottom: 3px;
 }
 
-.tabs-left > .nav-tabs {
+.tabs-left>.nav-tabs {
     float: left;
     margin-right: 19px;
     border-right: 1px solid #ddd;
 }
 
-.tabs-left > .nav-tabs > li > a {
+.tabs-left>.nav-tabs>li>a {
     margin-right: -1px;
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
 }
 
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
+.tabs-left>.nav-tabs>li>a:hover,
+.tabs-left>.nav-tabs>li>a:focus {
     border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
+.tabs-left>.nav-tabs .active>a,
+.tabs-left>.nav-tabs .active>a:hover,
+.tabs-left>.nav-tabs .active>a:focus {
     border-color: #ddd transparent #ddd #ddd;
     *border-right-color: #ffffff;
 }
 
-.tabs-right > .nav-tabs {
+.tabs-right>.nav-tabs {
     float: right;
     margin-left: 19px;
     border-left: 1px solid #ddd;
 }
 
-.tabs-right > .nav-tabs > li > a {
+.tabs-right>.nav-tabs>li>a {
     margin-left: -1px;
     -webkit-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     border-radius: 0 4px 4px 0;
 }
 
-.tabs-right > .nav-tabs > li > a:hover,
-.tabs-right > .nav-tabs > li > a:focus {
+.tabs-right>.nav-tabs>li>a:hover,
+.tabs-right>.nav-tabs>li>a:focus {
     border-color: #eeeeee #eeeeee #eeeeee #dddddd;
 }
 
-.tabs-right > .nav-tabs .active > a,
-.tabs-right > .nav-tabs .active > a:hover,
-.tabs-right > .nav-tabs .active > a:focus {
+.tabs-right>.nav-tabs .active>a,
+.tabs-right>.nav-tabs .active>a:hover,
+.tabs-right>.nav-tabs .active>a:focus {
     border-color: #ddd #ddd #ddd transparent;
     *border-left-color: #ffffff;
 }
@@ -2643,15 +2656,15 @@ div.content {
     border: 0;
 }
 
-.normaltable .nav-tabs > li a {
+.normaltable .nav-tabs>li a {
     padding: 13px 26px;
 }
 
-.normaltable .nav-tabs > li,
-.normaltable .nav-tabs > li a,
-.normaltable .nav-tabs > li.active > a,
-.normaltable .nav-tabs > li.active > a:focus,
-.normaltable .nav-tabs > li.active > a:hover {
+.normaltable .nav-tabs>li,
+.normaltable .nav-tabs>li a,
+.normaltable .nav-tabs>li.active>a,
+.normaltable .nav-tabs>li.active>a:focus,
+.normaltable .nav-tabs>li.active>a:hover {
     border-radius: 0;
     border-bottom: 0 !important;
     background-color: transparent;
@@ -2663,14 +2676,14 @@ div.content {
     background-color: #ffffff;
 }
 
-.normaltable .nav-tabs > li > a {
+.normaltable .nav-tabs>li>a {
     border-top: 3px solid transparent !important;
 }
 
-.normaltable.tabs-below .nav-tabs > li:hover a,
-.normaltable.tabs-below .nav-tabs > li:focus a,
-.normaltable.tabs-below .nav-tabs > li.active a,
-.normaltable.tabs-below .nav-tabs > li > a {
+.normaltable.tabs-below .nav-tabs>li:hover a,
+.normaltable.tabs-below .nav-tabs>li:focus a,
+.normaltable.tabs-below .nav-tabs>li.active a,
+.normaltable.tabs-below .nav-tabs>li>a {
     border-top: 0 !important;
     border-bottom: 3px solid transparent !important;
 }
@@ -2730,7 +2743,7 @@ div.content {
     border-radius: 0 !important
 }
 
-.customtab .nav-pills > li > a {
+.customtab .nav-pills>li>a {
     border: 0;
     border-radius: 0 !important;
     background: #ffffff;
@@ -2738,7 +2751,7 @@ div.content {
     margin: 10px 0;
 }
 
-.customtab .nav-pills > li h3 {
+.customtab .nav-pills>li h3 {
     padding: 0 0 10px;
     margin: 0;
     font-size: 16px;
@@ -2753,12 +2766,12 @@ div.content {
     margin: 0;
 }
 
-.customtab .nav-pills > li.active a h3,
-.customtab .nav-pills > li:hover a h3,
-.customtab .nav-pills > li:focus a h3,
-.customtab .nav-pills > li.active a p,
-.customtab .nav-pills > li:hover a p,
-.customtab .nav-pills > li:focus a p {
+.customtab .nav-pills>li.active a h3,
+.customtab .nav-pills>li:hover a h3,
+.customtab .nav-pills>li:focus a h3,
+.customtab .nav-pills>li.active a p,
+.customtab .nav-pills>li:hover a p,
+.customtab .nav-pills>li:focus a p {
     color: #ffffff;
 }
 
@@ -2775,7 +2788,7 @@ div.content {
     border-radius: 0 !important
 }
 
-.customtab.nav-top .nav-pills > li > a {
+.customtab.nav-top .nav-pills>li>a {
     border: 0;
     border-radius: 0 !important;
     background: #ffffff;
@@ -2783,7 +2796,7 @@ div.content {
     margin: 0;
 }
 
-.customtab.nav-top .nav-pills > li h3 {
+.customtab.nav-top .nav-pills>li h3 {
     font-size: 17px;
     font-weight: bold;
     margin: 0;
@@ -2811,12 +2824,12 @@ div.content {
     background-color: transparent;
 }
 
-.withicontable .nav-tabs > li > a {
+.withicontable .nav-tabs>li>a {
     border-top: 1px solid #ededed !important;
     background-color: #ffffff !important;
 }
 
-.withicontable .nav-tabs > li > a i {
+.withicontable .nav-tabs>li>a i {
     display: block;
     text-align: center;
     width: 30px;
@@ -2827,8 +2840,8 @@ div.content {
     margin: 0 auto 10px;
 }
 
-.withicontable .nav-tabs > li,
-.withicontable .nav-pills > li {
+.withicontable .nav-tabs>li,
+.withicontable .nav-pills>li {
     float: none;
     display: inline-block;
     *display: inline;
@@ -2851,7 +2864,7 @@ div.content {
     TOGGLE ACCORDION
 ******************************************/
 
-.first_accordion .panel-default > .panel-heading {
+.first_accordion .panel-default>.panel-heading {
     background-color: #fff;
     border-color: #efefef;
     border-radius: 0!important;
@@ -2868,7 +2881,7 @@ div.content {
     border-radius: 0!important
 }
 
-.first_accordion .panel-primary > .panel-heading {
+.first_accordion .panel-primary>.panel-heading {
     background-color: #fff;
     border-color: #efefef;
     border-radius: 0!important;
@@ -2884,7 +2897,7 @@ div.content {
     color: #fff!important
 }
 
-.first_accordion.withbordertop .panel-default > .panel-heading {
+.first_accordion.withbordertop .panel-default>.panel-heading {
     border-top: 3px double #111!important;
     padding-bottom: 20px!important
 }
@@ -2905,7 +2918,7 @@ div.content {
     top: 0
 }
 
-.first_accordion.withcolorful .panel-heading + .panel-collapse > .panel-body,
+.first_accordion.withcolorful .panel-heading+.panel-collapse>.panel-body,
 .first_accordion.withcolorful .panel {
     border: 0!important
 }
@@ -2914,7 +2927,7 @@ div.content {
     background-color: rgba(255, 255, 255, 0.2)!important
 }
 
-.first_accordion.withdescbg .panel-default > .panel-heading {
+.first_accordion.withdescbg .panel-default>.panel-heading {
     background-color: #F7F7F7;
     border: 0!important
 }
@@ -2922,6 +2935,7 @@ div.content {
 .first_accordion.withdescbg .panel {
     border: 0
 }
+
 
 /******************************************
     COUNTS
@@ -3253,8 +3267,8 @@ div.content {
     margin-bottom: 0;
 }
 
-.pagination > li > a,
-.pagination > li > span {
+.pagination>li>a,
+.pagination>li>span {
     background-color: #fff;
     border: 0 solid #ddd;
     color: #333333;
@@ -3374,8 +3388,8 @@ div.content {
     border: 1px solid #efefef;
 }
 
-.pager li > a,
-.pager li > span {
+.pager li>a,
+.pager li>span {
     background-color: #f7f7f7;
     border: 1px dashed #ededed;
     border-radius: 0;
@@ -4177,7 +4191,7 @@ div.content {
     background: #ffffff !important;
 }
 
-.shoppanel .panel-info > .panel-heading {
+.shoppanel .panel-info>.panel-heading {
     color: #121212;
 }
 
@@ -4419,20 +4433,20 @@ div.content {
     margin-bottom: 30px;
 }
 
-.shop-top .dropdown-menu > li > a {
+.shop-top .dropdown-menu>li>a {
     background-color: #ffffff !important;
     border: 0 !important;
     color: #676767 !important;
     box-shadow: none !important
 }
 
-.shop-top .dropdown-menu > li > a.active,
-.shop-top .dropdown-menu > li > a:active,
-.shop-top .bootstrap-select > .dropdown-toggle:hover,
-.shop-top .bootstrap-select > .dropdown-toggle:focus,
-.shop-top .bootstrap-select > .dropdown-toggle.active,
-.shop-top .bootstrap-select > .dropdown-toggle:active,
-.shop-top .bootstrap-select > .dropdown-toggle {
+.shop-top .dropdown-menu>li>a.active,
+.shop-top .dropdown-menu>li>a:active,
+.shop-top .bootstrap-select>.dropdown-toggle:hover,
+.shop-top .bootstrap-select>.dropdown-toggle:focus,
+.shop-top .bootstrap-select>.dropdown-toggle.active,
+.shop-top .bootstrap-select>.dropdown-toggle:active,
+.shop-top .bootstrap-select>.dropdown-toggle {
     border: 0 !important;
     color: #ffffff !important;
     box-shadow: none !important
@@ -5319,7 +5333,7 @@ div.content {
     position: relative;
 }
 
-.serviceBox3 .service-icon a > span {
+.serviceBox3 .service-icon a>span {
     width: 75px;
     height: 75px;
     border-radius: 5px;
@@ -5332,11 +5346,11 @@ div.content {
     transition: all 300ms ease-in-out 0s;
 }
 
-.serviceBox3:hover .service-icon a > span {
+.serviceBox3:hover .service-icon a>span {
     background: #99C548;
 }
 
-.serviceBox3 .service-icon a > span i {
+.serviceBox3 .service-icon a>span i {
     font-size: 30px;
     color: #fff;
     transform: rotate(-60deg);
@@ -5517,6 +5531,7 @@ div.content {
     padding: 20px 15px;
 }
 
+
 /*.service-list .twocolsection:nth-child(1),
 .service-list .twocolsection:nth-child(2),
 .service-list .col-md-4:nth-child(1),
@@ -5572,7 +5587,7 @@ div.content {
     margin-left: 85px;
 }
 
-.service-box-inner .content-box > h3,
+.service-box-inner .content-box>h3,
 .serviceBox6 .service-content h3 {
     font-size: 16px;
     margin-top: 10px;
@@ -5847,12 +5862,12 @@ div.content {
     SIDEBAR
 ******************************************/
 
-.sidebar .table > tbody > tr > td,
-.sidebar .table > tbody > tr > th,
-.sidebar .table > tfoot > tr > td,
-.sidebar .table > tfoot > tr > th,
-.sidebar .table > thead > tr > td,
-.sidebar .table > thead > tr > th {
+.sidebar .table>tbody>tr>td,
+.sidebar .table>tbody>tr>th,
+.sidebar .table>tfoot>tr>td,
+.sidebar .table>tfoot>tr>th,
+.sidebar .table>thead>tr>td,
+.sidebar .table>thead>tr>th {
     border: 0;
 }
 
@@ -5875,8 +5890,8 @@ div.content {
     background-color: #ffffff;
 }
 
-.pager li > a,
-.pager li > span,
+.pager li>a,
+.pager li>span,
 .single-portfolio-wrapper .widget {
     box-shadow: 0 6px rgba(55, 55, 55, 0.1);
 }
@@ -6244,7 +6259,7 @@ div.content {
 .color2 .page-title h4,
 .color2 .page-title h3,
 .color2 .breadcrumb li a,
-.color2 .breadcrumb > .active,
+.color2 .breadcrumb>.active,
 .color2 .breadcrumb li {
     color: #1f1f1f;
 }
@@ -6252,15 +6267,15 @@ div.content {
 .light-color h3,
 .light-color h4,
 .light-color .breadcrumb li a,
-.light-color .breadcrumb > .active,
+.light-color .breadcrumb>.active,
 .light-color .breadcrumb li,
 .page-title-color .breadcrumb li a,
-.page-title-color .breadcrumb > .active,
+.page-title-color .breadcrumb>.active,
 .page-title-color .breadcrumb li,
 .db .breadcrumb li a,
 .db .page-title h3,
 .db .page-title h4,
-.db .breadcrumb > .active,
+.db .breadcrumb>.active,
 .db .breadcrumb li,
 .page-title-color h3,
 .page-title-color h4 {
@@ -6269,7 +6284,7 @@ div.content {
 }
 
 .breadcrumb li a,
-.breadcrumb > .active,
+.breadcrumb>.active,
 .breadcrumb li {
     font-size: 13px;
 }
@@ -6644,11 +6659,12 @@ body.login .newsletter {
 
 .highlight {
     font-weight: bold;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 80px;
 }
+
 .milestone-details {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 21px;
     text-transform: uppercase;
     font-weight: 300;
@@ -6811,7 +6827,7 @@ li,
 p,
 body,
 .social-count .social-title,
-.navbar-nav > li > a {
+.navbar-nav>li>a {
     font-family: 'Lato', sans-serif !important;
 }
 
@@ -6822,16 +6838,21 @@ body,
     right: 0;
     top: 37% !important;
 }
+
 .demo-wrapper .team-boxes h4 a,
 .demo-wrapper .team-boxes h4 {
     padding-bottom: 30px !important
 }
+
 .demo-wrapper .team-boxes h4 a,
 .demo-wrapper .team-boxes h4 {
     background-color: #ffffff;
 }
 
+
 /*  SOCIAL CONTACT BUTOM COLOR */
+
+
 /******************************************
     File Name: colors.css
     Template Name: Convert
@@ -6897,23 +6918,23 @@ a:focus,
 .blog-meta ul li i,
 .btn-primary:focus.no-bg,
 .copyrights li:hover a,
-.navbar-nav > li:hover a,
-.flat .plan li > strong,
+.navbar-nav>li:hover a,
+.flat .plan li>strong,
 .custom_fact_item .fa,
-.navbar-nav > li:focus a,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav>li:focus a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     color: #1CAADE !important;
 }
 
 .fullscreen-carousel.owl-theme .owl-nav [class*="owl-"]:hover,
 .fullscreen-carousel.owl-theme .owl-nav [class*="owl-"]:focus,
 .owl-theme .owl-nav [class*="owl-"],
-.withicontable .nav-tabs > li > a i,
-.customtab .nav-pills > li.active a,
-.customtab .nav-pills > li:hover a,
-.customtab .nav-pills > li:focus a,
+.withicontable .nav-tabs>li>a i,
+.customtab .nav-pills>li.active a,
+.customtab .nav-pills>li:hover a,
+.customtab .nav-pills>li:focus a,
 .flat .btn,
 .pricing-box-05 ul li:hover,
 .pricing-box-05 .btn:focus,
@@ -6927,21 +6948,21 @@ a:focus,
 .pricing-box-05 .btn:active:hover,
 .pricing-box-05 .btn.active:hover,
 .wan-spinner a,
-.open > .dropdown-toggle.pricing-box-05 .btn:hover,
+.open>.dropdown-toggle.pricing-box-05 .btn:hover,
 .pricing-box-05:active:focus,
 .pricing-box-05.active:focus,
-.open > .dropdown-toggle.pricing-box-05 .btn:focus,
+.open>.dropdown-toggle.pricing-box-05 .btn:focus,
 .pricing-box-05:active.focus,
 .pricing-box-05.active.focus,
-.open > .dropdown-toggle.pricing-box-05 .btn.focus,
+.open>.dropdown-toggle.pricing-box-05 .btn.focus,
 .stat-count-1 i,
 hr.circle1::before,
 .tags a,
 #normalportfolio.text-center .gallery-desc-full,
 .colormagnifier .magnifier,
 .carousel-control,
-.pagination > li > a,
-.pagination > li > span,
+.pagination>li>a,
+.pagination>li>span,
 hr.style16::after,
 body.login,
 hr.style17::after,
@@ -6950,7 +6971,7 @@ hr.style15::after,
 .popover-title,
 div.bbp-template-notice.info,
 .hovericons,
-.serviceBox3 .service-icon a > span,
+.serviceBox3 .service-icon a>span,
 .ribbon-pt1,
 .serviceBox1 .service-icon i,
 .serviceBox:hover .service-icon,
@@ -6971,8 +6992,8 @@ div.bbp-template-notice.info,
 .skills .progress-bar,
 .with-blog-cat .blog-category,
 #slider h4,
-.pager li:hover > a,
-.pager li:hover > span,
+.pager li:hover>a,
+.pager li:hover>span,
 .page-title-color,
 .section-small-title hr,
 .header .label-success,
@@ -6988,18 +7009,18 @@ div.bbp-template-notice.info,
 .color10 {
     background-color: #1CAADE !important;
 }
+
 .revtp-searchform input[type="submit"],
 .revtp-form input[type="submit"],
-
 .gallery-item:hover .gallery-desc,
-.normaltable.tabs-below .nav-tabs > li.active a,
-.normaltable.tabs-below .nav-tabs > li:hover a,
-.normaltable.tabs-below .nav-tabs > li:focus a,
+.normaltable.tabs-below .nav-tabs>li.active a,
+.normaltable.tabs-below .nav-tabs>li:hover a,
+.normaltable.tabs-below .nav-tabs>li:focus a,
 .serviceBox3 .service-icon a,
 .service-ver-1.service-withbg,
-.navbar-nav > li > .dropdown-menu .dropdown-menu,
-.navbar-nav > li > .dropdown-menu,
-.navbar-nav > li.megamenu > .dropdown-menu {
+.navbar-nav>li>.dropdown-menu .dropdown-menu,
+.navbar-nav>li>.dropdown-menu,
+.navbar-nav>li.megamenu>.dropdown-menu {
     border-bottom-color: #1CAADE !important;
 }
 
@@ -7023,11 +7044,11 @@ blockquote {
     border-color: #1CAADE !important;
 }
 
-.panel-info > .panel-heading,
-.first_accordion.withbordertop .panel-default > .panel-heading,
-.normaltable .nav-tabs > li.active a,
-.normaltable .nav-tabs > li:hover a,
-.normaltable .nav-tabs > li:focus a,
+.panel-info>.panel-heading,
+.first_accordion.withbordertop .panel-default>.panel-heading,
+.normaltable .nav-tabs>li.active a,
+.normaltable .nav-tabs>li:hover a,
+.normaltable .nav-tabs>li:focus a,
 .ribbon-pt1::before,
 .ribbon-pt1::after,
 .ribbon-pt1::before,
@@ -7062,8 +7083,8 @@ blockquote {
 
 /****** FIRST COLOR HOVER *******/
 
-.pagination > li > a:hover,
-.pagination > li > span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover,
 .owl-theme .owl-nav [class*="owl-"]:hover,
 .first_accordion.withicon i,
 .pricing-box-09 ul li:hover,
@@ -7074,15 +7095,15 @@ blockquote {
 .pricing-box-09 .btn.active,
 .pricing-box-09 .btn:active:hover,
 .pricing-box-09 .btn.active:hover,
-.open > .dropdown-toggle.pricing-box-09 .btn:hover,
+.open>.dropdown-toggle.pricing-box-09 .btn:hover,
 .pricing-box-09:active:focus,
 .pricing-box-09.active:focus,
-.first_accordion .panel-primary > .panel-heading,
-.first_accordion .panel-primary > .panel-heading,
-.open > .dropdown-toggle.pricing-box-09 .btn:focus,
+.first_accordion .panel-primary>.panel-heading,
+.first_accordion .panel-primary>.panel-heading,
+.open>.dropdown-toggle.pricing-box-09 .btn:focus,
 .pricing-box-09:active.focus,
 .pricing-box-09.active.focus,
-.open > .dropdown-toggle.pricing-box-09 .btn.focus,
+.open>.dropdown-toggle.pricing-box-09 .btn.focus,
 .flat .btn:hover,
 .flat .btn:focus,
 .pricing-box-05 .btn:hover,
@@ -7096,19 +7117,19 @@ blockquote {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary,
+.open>.dropdown-toggle.btn-primary,
 .btn-primary:active:hover,
 .btn-primary.active:hover,
-.open > .dropdown-toggle.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary:hover,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
-.open > .dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:focus,
 .btn-primary:active.focus,
 .btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary,
+.open>.dropdown-toggle.btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,
@@ -7154,19 +7175,19 @@ mark,
 .btn-default:hover,
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default,
+.open>.dropdown-toggle.btn-default,
 .btn-default:active:hover,
 .btn-default.active:hover,
-.open > .dropdown-toggle.btn-default:hover,
+.open>.dropdown-toggle.btn-default:hover,
 .btn-default:active:focus,
 .btn-default.active:focus,
-.open > .dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:focus,
 .btn-default:active.focus,
 .btn-default.active.focus,
-.open > .dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default.focus,
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default,
+.open>.dropdown-toggle.btn-default,
 .btn-default.disabled:hover,
 .btn-default[disabled]:hover,
 fieldset[disabled] .btn-default:hover,
@@ -7203,10 +7224,10 @@ fieldset[disabled] .btn-default.focus,
 .btn-success:hover,
 .btn-danger:hover,
 .btn-warning:hover,
-.header-theme-color .navbar-default .navbar-nav > .active > a,
-.header-theme-color .navbar-default .navbar-nav > .active > a:hover,
-.header-theme-color .navbar-default .navbar-nav > .active > a:focus,
-.header-theme-color .navbar-nav > li > a {
+.header-theme-color .navbar-default .navbar-nav>.active>a,
+.header-theme-color .navbar-default .navbar-nav>.active>a:hover,
+.header-theme-color .navbar-default .navbar-nav>.active>a:focus,
+.header-theme-color .navbar-nav>li>a {
     color: #ffffff !important;
 }
 
