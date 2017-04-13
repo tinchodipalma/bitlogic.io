@@ -1828,6 +1828,10 @@ div.content {
     width: 100%;
 }
 
+#customers .team-boxes {
+    margin-top: 18px;
+}
+
 .team-boxes h4 a,
 .team-boxes h4 {
     text-transform: uppercase;
