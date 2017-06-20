@@ -25,6 +25,3 @@ pipeline:
   run-smoke-test:
       image: bitlogicos/bitlogic-io-test
       pull: true
-      
-
-        
