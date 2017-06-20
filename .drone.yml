@@ -13,15 +13,15 @@ pipeline:
     tag:
     - latest
     - "1.0.${DRONE_BUILD_NUMBER}"
-  deploy-to-8080:
+  deploy:
       image: plugins/ssh
-      host: i1.bitlogic.io
-      user: ec2-user
+      host: www.bitlogic.io
+      user: ubuntu
       port: 22
       script:
         - docker pull bitlogicos/bitlogic-io
-        - docker rm -f beta || true
-        - docker run --name beta -p 8080:80 -d bitlogicos/bitlogic-io
+        - docker rm -f site || true
+        - docker run --name sie -p 80:80 -p 443:443 -p 8999:8999 -d bitlogicos/bitlogic-io
   run-smoke-test:
       image: bitlogicos/bitlogic-io-test
       pull: true
