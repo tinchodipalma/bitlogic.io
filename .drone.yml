@@ -21,7 +21,7 @@ pipeline:
       script:
         - docker pull bitlogicos/bitlogic-io
         - docker rm -f site || true
-        - docker run --name site -p 80:80 -p 443:443 -p 8999:8999 -d bitlogicos/bitlogic-io
+        - docker run --name site -p 80:80 -d bitlogicos/bitlogic-io:local
   run-smoke-test:
       image: bitlogicos/bitlogic-io-test
       pull: true
