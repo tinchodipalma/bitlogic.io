@@ -13,15 +13,15 @@ pipeline:
     tag:
     - latest
     - "1.0.${DRONE_BUILD_NUMBER}"
-  deploy:
-      image: plugins/ssh
-      host: www.bitlogic.io
-      user: ubuntu
-      port: 22
-      script:
-        - docker pull bitlogicos/bitlogic-io
-        - docker rm -f site || true
-        - docker run --name site -p 80:80 -d bitlogicos/bitlogic-io:local
-  run-smoke-test:
-      image: bitlogicos/bitlogic-io-test
-      pull: true
+#  deploy:
+#      image: plugins/ssh
+#      host: www.bitlogic.io
+#     user: ubuntu
+#      port: 22
+#      script:
+#        - docker pull bitlogicos/bitlogic-io
+#        - docker rm -f site || true
+#        - docker run --name site -p 80:80 -d bitlogicos/bitlogic-io:local
+#  run-smoke-test:
+#      image: bitlogicos/bitlogic-io-test
+#      pull: true
